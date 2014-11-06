@@ -4,6 +4,14 @@ $lang['Version']     = 'Version';
 $lang['Description'] = 'Description';
 $lang['changelog']   = array(
 
+'2.10.9' => '06/10/2014
+- [Cambios]
+- El proyecto cambia de nombre a XG Project y comienza de nuevo el desarrollo activo.-
+
+- [Mejoras]
+- Se corrigen pequeños textos de lenguaje.-
+',
+
 '2.10.8' => '19/12/2013
 - [Mejoras]
 - Más notices corregidos.-

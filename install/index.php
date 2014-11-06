@@ -285,6 +285,7 @@ switch ($Mode)
 					case '2.10.5':
 					case '2.10.6':
 					case '2.10.7':
+					case '2.10.8':
 						update_config ( 'version' , SYSTEM_VERSION );
 					break;
 					default:
