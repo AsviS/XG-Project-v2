@@ -35,8 +35,8 @@ Si tienes alguna versión anterior a la 2.0:
 Si tienes entre la versión 2.0 y 2.9:
 
 1. Actualiza a la 2.9.8
-2. Actualiza a la 2.10.8
+2. Actualiza a la 2.10.9
 
-Si tienes la versión 2.9.0 o superior puedes actualizar directamente a la 2.10.8
+Si tienes la versión 2.9.0 o superior puedes actualizar directamente a la 2.10.9
 
 Para actualizar, solo debes borrar todos los ficheros excepto el config.xml y reemplazarlos por los contenidos en este pack. Luego, accede al sistema de instalación y elije la opción "Actualizar", y sigue los pasos.
