@@ -7,7 +7,7 @@ $lang['mu_moderation_page']	= 'Permisos';
 $lang['adm_cp_logout']		= 'Salir';
 
 //	MISCELANEO - MISCELLANEOUS
-$lang['ad_number']			= 'N&ordm;';
+$lang['ad_number']			= 'Nº';
 $lang['only_numbers']		= '¡Solo podes ingresar números!';
 $lang['select_option']		= 'Seleccionar...';
 
@@ -388,7 +388,7 @@ $lang['od_select_action']	= 'Seleccionar acción';
 
 //---------------	PAGINA DE INICIO - OVERVIEW	------------------------//
 $lang['ow_title']				= 'Bienvenido a XG Project';
-$lang['ow_welcome_text']		= 'Gracias por elegir XG Project. Día a día trabajamos por ser el OGame OpenSource N&ordm;1 de la red. A continuación tienes un "vistazo" general del juego. Podrás realizar todos los cambios que desees navegando por el menú de la izquierda.';
+$lang['ow_welcome_text']		= 'Gracias por elegir XG Project. Día a día trabajamos por ser el clon de OGame OpenSource Nº1 de la red. A continuación tienes un "vistazo" general del juego. Podrás realizar todos los cambios que desees navegando por el menú de la izquierda.';
 $lang['ow_overview']			= 'Panel de control';
 $lang['ow_support']				= 'Soporte';
 $lang['ow_credits']				= 'Créditos';
@@ -399,7 +399,7 @@ $lang['ow_special_thanks']			= 'Special Thanks';
 $lang['ow_install_file_detected']	= 'Se detecto el directorio install/. Por razones se seguridad recomendamos eliminarlo.';
 $lang['ow_config_file_writable']	= 'El archivo config.php puede ser escrito, es recomendable que sea colocado en chmod 440 (sólo lectura).';
 $lang['ow_database_errors']			= 'Hay errores en tu base de datos. Puedes verlos haciendo <a href="ErrorPage.php">click aquí</a>';
-$lang['ow_old_version']				= 'Hay una nueva versión disponible. Haz click <a href="https://github.com/XG-Project/XG-Project-v2/releases" target="_blank">aquí</a> para descargarla';
+$lang['ow_old_version']				= 'Hay una nueva versión disponible. Haz clic <a href="https://github.com/XG-Project/XG-Project-v2/releases" target="_blank">aquí</a> para descargarla';
 $lang['ow_none']					= 'No hay actualizaciones ni advertencias';
 //###########################################################//
 
@@ -440,10 +440,10 @@ $lang['se_ships_cdr']						= 'Naves a escombros';
 $lang['se_def_cdr_message']					= 'Establece el porcentaje de escombros que generarian las defensas después de un ataque';
 $lang['se_ships_cdr_message']				= 'Establece el porcentaje de escombros que generarian las naves después de un ataque';
 $lang['se_noob_protect']					= 'Protección novatos';
-$lang['se_noob_protect2']					= 'Protección N. puntos';
-$lang['se_noob_protect3']					= 'Protección N. puntos limite';
+$lang['se_noob_protect2']					= 'Protección Nº puntos';
+$lang['se_noob_protect3']					= 'Protección Nº puntos limite';
 $lang['se_noob_protect_e2']					= 'Límite de puntos en el que dejas de ser novato';
-$lang['se_noob_protect_e3']					= 'Click para más información';
+$lang['se_noob_protect_e3']					= 'El multiplicador para diferenciar a un novato';
 //###########################################################//
 
 
@@ -531,7 +531,7 @@ $lang['mu_tools']					= 'Herramientas';
 $lang['mu_md5_encripter']			= 'Encriptador MD5';
 $lang['mu_optimize_db']				= 'Base de datos';
 $lang['mu_manual_points_update']	= 'Update manual de puntos';
-$lang['mu_mpu_confirmation']		= 'El update de puntos es automático, de todas formas puedes realizarlo manualmente si lo deseas haciendo click aqui ¿Deseas continuar?';
+$lang['mu_mpu_confirmation']		= 'El update de puntos es automático, de todas formas puedes realizarlo manualmente si lo deseas haciendo clic aqui ¿Deseas continuar?';
 $lang['mu_search_page']				= 'Buscador avanzado';
 $lang['mu_info_account_page']		= 'Información de cuentas';
 $lang['mu_planets_options']			= 'Opciones de planetas';
@@ -718,7 +718,7 @@ $lang['se_input_asc']		=	'Ascendiente';
 $lang['se_input_desc']		=	'Descendiente';
 $lang['se_input_activity']	=	'Actividad';
 $lang['se_input_register']	=	'Registro';
-$lang['se_input_members']	=	'N&ordm; Miembros';
+$lang['se_input_members']	=	'Nº Miembros';
 $lang['se_input_members2']	=	'Miembros';
 $lang['se_input_have_moon']	=	'¿Tiene luna?';
 $lang['se_input_ip']		=	'IP';
@@ -1013,6 +1013,6 @@ $lang['log_searchindb_vacat']		= 'Vacaciones';
 $lang['log_searchindb_susp']		= 'Suspendidos';
 $lang['log_searchindb_admin']		= 'Administradores';
 $lang['log_searchindb_inac']		= 'Inactivos';
-$lang['log_search_advert_popup']	= 'Para Activar/Desactivar el historial podes hacerlo desde la sección de Permisos. Click para ir al panel de permisos.';
+$lang['log_search_advert_popup']	= 'Para Activar/Desactivar el historial podes hacerlo desde la sección de Permisos. Clic para ir al panel de permisos.';
 //###########################################################//
 ?>

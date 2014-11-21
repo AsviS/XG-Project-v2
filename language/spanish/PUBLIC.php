@@ -52,11 +52,11 @@ $lang['mail_already_exists']		= '¡El email ingresado ya existe!<br />';
 $lang['welcome_message_from']		= 'Admin';
 $lang['welcome_message_sender']		= 'Admin';
 $lang['welcome_message_subject']	= '¡Bienvenido!';
-$lang['welcome_message_content']	= '¡Bienvenido a XG Project!<p>Al comenzar, construye una mina de Metal.<br />Para hacerlo, haz click en el enlace \"Edificios\" en la izquierda, y dale a \"construir\" a la derecha de la mina de metal.<br />Ahora tienes algo de tiempo para conocer más cosas del juego.<p>Podrás encontrar ayuda:<br />En el <a href=\"http://www.xtreme-gamez.com.ar/foros\" target=\"_blank\">Foro</a><br />Ahora, tu mina debería estar acabada.<br />Como no producen nada sin energía, deberías construir una Planta de energía solar, vuelve a Edificios, y elige construir la Planta de energía solar.<p>Para ver todas las naves, estructuras defensivas, edificios e investigaciones que puedes investigar, puedes echarle un vistazo al árbol de tecnología en \"Tecnología\" en el menú izquierdo.<p>Ahora ya puedes empezar la conquista del universo... ¡Buena suerte!';
+$lang['welcome_message_content']	= '¡Bienvenido a XG Project!<p>Al comenzar, construye una mina de Metal.<br />Para hacerlo, haz clic en el enlace \"Edificios\" en la izquierda, y dale a \"construir\" a la derecha de la mina de metal.<br />Ahora tienes algo de tiempo para conocer más cosas del juego.<p>Podrás encontrar ayuda:<br />En el <a href=\"https://xgproject.org/\" target=\"_blank\">Foro</a><br />Ahora, tu mina debería estar acabada.<br />Como no producen nada sin energía, deberías construir una Planta de energía solar, vuelve a Edificios, y elige construir la Planta de energía solar.<p>Para ver todas las naves, estructuras defensivas, edificios e investigaciones que puedes investigar, puedes echarle un vistazo al árbol de tecnología en \"Tecnología\" en el menú izquierdo.<p>Ahora ya puedes empezar la conquista del universo... ¡Buena suerte!';
 $lang['reg_completed']				= '¡Registro completo!';
 
 //registry_form.tpl
-$lang['server_message_reg']			= '¡únete ya y forma parte del fantástico mundo de';
+$lang['server_message_reg']			= '¡Únete ya y forma parte del fantástico mundo de';
 $lang['register_at_reg']			= 'Registro en';
 $lang['user_reg']					= 'Usuario';
 $lang['pass_reg']					= 'Contraseña';

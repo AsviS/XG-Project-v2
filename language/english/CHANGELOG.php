@@ -4,6 +4,16 @@ $lang['Version']     = 'Version';
 $lang['Description'] = 'Description';
 $lang['changelog']   = array(
 
+'2.10.10' => '21/11/2014
+- [Cambios]
+- Se cambian las referencias a la nueva web en xgproject.org.-
+
+- [Bugs]
+- Se soluciona un error en el check de la actualización.-
+- Se mejora la carga de la página de administración.-
+- Pequeñas mejoras en lenguaje.-
+',
+
 '2.10.9' => '06/10/2014
 - [Cambios]
 - El proyecto cambia de nombre a XG Project y comienza de nuevo el desarrollo activo.-
@@ -649,7 +659,7 @@ la batalla no le figuraba.
 - [Fix][Varios] Corregidos varios bugs menores en los movimientos de flotas y misiones.-
 - [Fix][Bug #108] Coordenadas erroneas en el mensaje de reciclaje.-
 - [Fix][Bug #109] Los jugadores de la lista de compañeros aparecen siempre como desconectados.-
-- [Fix][Bug #110] Duplicación de recicladores al hacer multiple clicks en la galaxia.-
+- [Fix][Bug #110] Duplicación de recicladores al hacer multiple clics en la galaxia.-
 - [Fix][Bug #111] Jugadores inactivos y borrados no son eliminados fisicamente.-
 - [Fix][Bug #112] No son actualizados los recursos del planeta de un jugador al ser atacado.-
 - [Fix][Bug #113] Pequeño bug que muestra un mensaje de error en la pagina de los sacs.-
@@ -1166,7 +1176,7 @@ la batalla no le figuraba.
 - Mod Agregado Loteria (project xnova), adaptado y corregido a esta version.-
 - Mod Reacomodo vision general (projectxnova), corregida compatilidad (overview.php).-
 - Mod Recursos en tiempo real (tonique) modo test por ahora.-
-- Borrado actualizacion automatica, consume muchos recursos (todos haciendo click a vision general).-
+- Borrado actualizacion automatica, consume muchos recursos (todos haciendo clic a vision general).-
 ',
 
 '1.4c' => ' 08/02/09
@@ -1182,7 +1192,7 @@ la batalla no le figuraba.
 - Agregado un mensaje recordatorio de como se debe incrementar o eliminar la materia oscura (Gracias edering).-
 - Anuncios eliminados (Por votación de los usuarios de XG).-
 - El auto-update no soporta más las siguientes versiones:  v0.9a/v1.0a/v1.0b/v1.1a/v1.1b/v1.1c/v1.2a/v1.2b/v1.2c/v1.3a (Si tienes alguna des estas versiones deberás usar un update anterior).-
-- Ahora en la busqueda al hacer click en el link te redirecciona al sistema del jugador y no al tuyo (By Anghelito).-
+- Ahora en la busqueda al hacer clic en el link te redirecciona al sistema del jugador y no al tuyo (By Anghelito).-
 ',
 
 '1.4b' => ' 06/12/08

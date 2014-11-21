@@ -77,7 +77,7 @@ switch ($Mode)
 				exit();
 			}
 
-			$parse['first']	= "Conexión establecida con ?xito...";
+			$parse['first']	= "Conexión establecida con éxito...";
 
 			fwrite($dz, "<?php\n");
 			fwrite($dz, "if(!defined(\"INSIDE\")){ header(\"location:".XGP_ROOT."\"); }\n");
@@ -91,7 +91,7 @@ switch ($Mode)
 			fwrite($dz, "?>");
 			fclose($dz);
 
-			$parse['second']	= "Archivo config.php creado con ?xito...";
+			$parse['second']	= "Archivo config.php creado con éxito...";
 
 			doquery ($QryTableAks        , 'aks'    	);
 			doquery ($QryTableAlliance   , 'alliance'   );
@@ -108,7 +108,7 @@ switch ($Mode)
 			doquery ($QryTableStatPoints , 'statpoints'	);
 			doquery ($QryTableUsers      , 'users'  	);
 
-			$parse['third']	= "Tablas creadas con &eaute;xito...";
+			$parse['third']	= "Tablas creadas con éxito...";
 
 			$frame  = parsetemplate(gettemplate('install/ins_form_done'), $parse);
 		}
@@ -218,7 +218,7 @@ switch ($Mode)
 
 			if ( !$administrator )
 			{
-				die(message("¡Error! - ¡El administrador ingresado no existe o el usuario no tiene permisos administrativos!","index.php?mode=upgrade", "3", FALSE, FALSE));
+				die(message("¡Error! - ¡El administrador introducido no existe o el usuario no tiene permisos administrativos!","index.php?mode=upgrade", "3", FALSE, FALSE));
 			}
 
 			if(filesize('../config.php') == 0)
