@@ -50,7 +50,7 @@
 	</config>
 	<config>
 		<name>close_reason</name>
-		<value>¡En este momento el servidor se encuentra cerrado!</value>
+		<value>¡In this moment the server is closed!</value>
 	</config>
 	<config>
 		<name>metal_basic_income</name>
@@ -106,7 +106,7 @@
 	</config>
 	<config>
 		<name>lang</name>
-		<value>spanish</value>
+		<value>english</value>
 	</config>
 	<config>
 		<name>stat</name>
