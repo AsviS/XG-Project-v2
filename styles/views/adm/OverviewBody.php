@@ -25,7 +25,7 @@ th.lic{border:0px;}</style>
         	<br />
             <a href="https://github.com/XG-Project/XG-Project-v2/issues" target="_blank">Reporte de bugs (Bug Report)</a>
         	<br />
-        	<a href="http://www.xgproyect.net/" target="_blank">XG Project {ow_forum}</a>
+        	<a href="https://xgproject.org/" target="_blank">XG Project {ow_forum}</a>
         	<br />
             <br />
         </th>
@@ -40,7 +40,7 @@ th.lic{border:0px;}</style>
                   <th class="lic"><h3>{ow_project_leader}</h3></th>
                 </tr>
                 <tr>
-                  <th class="lic"><h3><font color="red">lucky</font></h3></th>
+                  <th class="lic"><h3><font color="red"><a href="https://www.razican.com" title"El Blog de Razican">Razican</a></font></h3></th>
                 </tr>
                 <tr>
                   <th class="lic"><h3>{ow_principal_contributors}</h3></th>
@@ -50,6 +50,7 @@ th.lic{border:0px;}</style>
                   	<table width="100%" border="0">
                       <tr>
                         <td>
+                        	lucky (Líder de XG Proyect, colaborador en XG Project)<br />
                         	angelus_ira (Estadísticas - optimización general)<br />
                         	Calzon (Fixs varios)<br />
                         	cyberrichy (SAC's)<br />

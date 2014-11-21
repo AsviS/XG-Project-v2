@@ -1,4 +1,4 @@
-<!-- Main div starts here | XG Project - www.xgproyect.net -->
+<!-- Main div starts here | XG Project - xgproject.org -->
 <div id="main">
     <div id="login">
         <div id="login_input">
@@ -50,4 +50,4 @@
 		</div>
 	</div>
 </div>
-<!-- Main div ends here | XG Project - www.xgproyect.net -->
+<!-- Main div ends here | XG Project - xgproject.org -->

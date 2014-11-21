@@ -389,7 +389,7 @@ $lang['od_select_action']	= 'Select';
 
 //---------------	PÁGINA DE INICIO - OVERVIEW	------------------------//
 $lang['ow_title']				= 'Welcome to XG Project';
-$lang['ow_welcome_text']		= 'Thank you for choosing XG Project. Day by day we work to be the OpenSource OGame Nº1 on the web. Here is a "look" of the overall game. You can make all the changes you want browsing the menu on the left.';
+$lang['ow_welcome_text']		= 'Thank you for choosing XG Project. Day by day we work to be the Nº1 OpenSource OGame clon on the web. Here is a "look" of the overall game. You can make all the changes you want browsing the menu on the left.';
 $lang['ow_overview']			= 'Control panel';
 $lang['ow_support']				= 'Support';
 $lang['ow_credits']				= 'Credits';

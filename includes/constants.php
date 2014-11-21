@@ -10,7 +10,7 @@
 if ( !defined('INSIDE') ) die(header("location:../"));
 
 	// VERSION
-	define('SYSTEM_VERSION' 			, '2.10.9');
+	define('SYSTEM_VERSION' 			, '2.10.10');
 
 	// TEMPLATES DEFAULT SETTINGS
 	define('SKIN_PATH'					, 'styles/skins/');
@@ -18,7 +18,7 @@ if ( !defined('INSIDE') ) die(header("location:../"));
 	define('DEFAULT_SKINPATH' 		 	, 'styles/skins/xgproject/');
 
 	// ADMINISTRATOR EMAIL AND GAME URL - THIS DATA IS REQUESTED BY REG.PHP
-	define('ADMINEMAIL'               	, "info@xgproyect.com");
+	define('ADMINEMAIL'               	, "admin@razican.com");
 	define('GAMEURL'                  	, "http://".$_SERVER['HTTP_HOST']."/");
 
 	// UNIVERSE DATA, GALAXY, SYSTEMS AND PLANETS || DEFAULT 9-499-15 RESPECTIVELY

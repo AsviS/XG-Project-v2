@@ -20,7 +20,11 @@ function check_updates()
 {
 	if ( function_exists ( 'file_get_contents' ) )
 	{
-		$last_v 	= file_get_contents ( 'http://xgproyect.xgproyect.net/current.php' );
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, 'https://xgproyect.org/check_updates.php');
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+		$last_v		= curl_exec($ch);
 		$system_v	= read_config ( 'version' );
 
 		return version_compare ( $system_v , $last_v , '<' );

@@ -6,7 +6,7 @@
 	<th><input type="text" name="host" value="" size="30" /></th>
 </tr>
 <tr>
-	<th>Base de datos: <br /> Ej: ogame</th>
+	<th>Base de datos: <br /> Ej: xgproject</th>
 	<th><input type="text" name="db" value="" size="30" /></th>
 </tr>
 <tr>

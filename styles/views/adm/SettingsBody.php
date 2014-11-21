@@ -80,7 +80,7 @@
 </tr><tr>
 	<th>{se_noob_protect3}</th>
 	<th><input name="noobprotectionmulti" value="{noobprot3}" type="text"></th>
-	<th><a href="http://xgproyect.net/threads/506" target="_blank"><img src="../styles/images/Adm/i.gif" onMouseOver='return overlib("{se_noob_protect_e3}", CENTER, OFFSETX, -150, OFFSETY, -20, WIDTH, 250);' onMouseOut='return nd();'></a></th>
+	<th><img src="../styles/images/Adm/i.gif" onMouseOver='return overlib("{se_noob_protect_e3}", CENTER, OFFSETX, -150, OFFSETY, -20, WIDTH, 250);' onMouseOut='return nd();'></th>
 </tr></tr>
 	<th colspan="3"><input value="{se_save_parameters}" type="submit"></th>
 </tr>
