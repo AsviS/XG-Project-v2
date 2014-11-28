@@ -20,7 +20,7 @@ if ($user['authlevel'] < 1) die(message ($lang['404_page']));
 	$page .= "<head>\n";
 	$page .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n";
 	$page .= "<title>". read_config ( 'game_name' ) ." - Admin CP</title>\n";
-	$page .= "<link rel=\"shortcut icon\" href=\"./../favicon.ico\">\n";
+	$page .= "<link rel=\"shortcut icon\" href=\"./../favicon.png\">\n";
 	$page .= "</head>\n";
 	$page .= "<frameset cols=\"180,*\" frameborder=\"no\" border=\"0\" framespacing=\"0\">\n";
 	$page .= "<frame src=\"menu.php\" name=\"rightFrame\" id=\"rightFrame\"/>\n";

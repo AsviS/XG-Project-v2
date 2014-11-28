@@ -143,7 +143,7 @@ function display ($page, $topnav = TRUE, $metatags = '', $AdminPage = FALSE, $me
 function StdUserHeader ($metatags = '')
 {
 	$parse['-title-']	= read_config ( 'game_name' );
-	$parse['-favi-']	= "<link rel=\"shortcut icon\" href=\"./favicon.ico\">\n";
+	$parse['-favi-']	= "<link rel=\"shortcut icon\" href=\"./favicon.png\">\n";
 	$parse['-meta-']	= "<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n";
 	$parse['-meta-']   .= "<meta name=\"generator\" content=\"XG Project " . VERSION . "\" />\n";
 	$parse['-meta-']   .= "<meta charset=\"UTF-8\">";
@@ -177,7 +177,7 @@ function AdminUserHeader ($metatags = '')
 	}
 
 
-	$parse['-favi-']	= 	"<link rel=\"shortcut icon\" href=\"./../favicon.ico\">\n";
+	$parse['-favi-']	= 	"<link rel=\"shortcut icon\" href=\"./../favicon.png\">\n";
 	$parse['-style-']	=	"<link rel=\"stylesheet\" type=\"text/css\" href=\"./../styles/css/admin.css\">\n";
 	$parse['-meta-']	= 	"<script type=\"text/javascript\" src=\"./../js/overlib-min.js\"></script>\n";
 	$parse['-meta-']   .=	"<meta charset=\"UTF-8\">";

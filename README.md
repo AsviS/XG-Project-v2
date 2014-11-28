@@ -24,7 +24,7 @@ Si tienes alguna versión anterior a la 2.0:
 Si tienes entre la versión 2.0 y 2.9:
 
 1. Actualiza a la 2.9.8
-2. Actualiza a la 2.10.10
+2. Actualiza a la 2.10.11
 
 Si tienes la versión 2.9.0 o superior puedes actualizar directamente a la 2.10.9
 

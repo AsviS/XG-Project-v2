@@ -4,6 +4,12 @@ $lang['Version']     = 'Version';
 $lang['Description'] = 'Description';
 $lang['changelog']   = array(
 
+'2.10.11' => 'Sin fecha
+- [Cambios]
+- Se cambian las imágenes.-
+- Se añade un nuevo tema por defecto, el de XG Project, que será 100% libre.-
+',
+
 '2.10.10' => '21/11/2014
 - [Cambios]
 - Se cambian las referencias a la nueva web en xgproject.org.-
