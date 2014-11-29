@@ -138,7 +138,7 @@ $QryTableNotes      .= ") ENGINE=MyISAM;";
 
 $QryTablePlanets     = "CREATE TABLE `{{table}}` ( ";
 $QryTablePlanets    .= "`id` bigint(11) NOT NULL auto_increment, ";
-$QryTablePlanets    .= "`name` varchar(255) character set latin1 default 'Planeta Principal', ";
+$QryTablePlanets    .= "`name` varchar(255) character set latin1 default 'Homeworld', ";
 $QryTablePlanets    .= "`id_owner` int(11) default NULL, ";
 $QryTablePlanets    .= "`id_level` int(11) default NULL, ";
 $QryTablePlanets    .= "`galaxy` int(11) NOT NULL default '0', ";
