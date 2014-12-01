@@ -24,39 +24,39 @@
           <td class=c colspan="2">{al_legend}</td>
         </tr>
         <tr>
-          <th><img src=styles/images/r1.png></th>
+          <th><img src="styles/images/false.png"></th>
           <th>{al_legend_disolve_alliance}</th>
         </tr>
         <tr>
-          <th><img src=styles/images/r2.png></th>
+          <th><img src="styles/images/r2.png"></th>
           <th>{al_legend_kick_users}</th>
         </tr>
         <tr>
-          <th><img src=styles/images/r3.png></th>
+          <th><img src="styles/images/r3.png"></th>
           <th>{al_legend_see_requests}</th>
         </tr>
         <tr>
-          <th><img src=styles/images/r4.png></th>
+          <th><img src="styles/images/r4.png"></th>
           <th>{al_legend_see_users_list}</th>
         </tr>
         <tr>
-          <th><img src=styles/images/r5.png></th>
+          <th><img src="styles/images/r5.png"></th>
           <th>{al_legend_check_requests}</th>
         </tr>
         <tr>
-          <th><img src=styles/images/r6.png></th>
+          <th><img src="styles/images/r6.png"></th>
           <th>{al_legend_admin_alliance}</th>
         </tr>
         <tr>
-          <th><img src=styles/images/r7.png></th>
+          <th><img src="styles/images/r7.png"></th>
           <th>{al_legend_see_connected_users}</th>
         </tr>
         <tr>
-          <th><img src=styles/images/r8.png></th>
+          <th><img src="styles/images/r8.png"></th>
           <th>{al_legend_create_circular}</th>
         </tr>
         <tr>
-          <th><img src=styles/images/r9.png></th>
+          <th><img src="styles/images/r9.png"></th>
           <th>{al_legend_right_hand}</th>
         </tr>
         <tr>

@@ -246,6 +246,11 @@ switch ($Mode)
 				$Qry9 = "ALTER TABLE $dbsettings[prefix]galaxy ADD `invisible_start_time` int(11) NOT NULL default '0'; ";
 				$Qry10 = "ALTER TABLE `$dbsettings[prefix]users` DROP `rpg_espion`,DROP `rpg_constructeur`,DROP `rpg_scientifique`,DROP `rpg_commandant`,DROP `rpg_stockeur`,DROP `rpg_defenseur`,DROP `rpg_destructeur`,DROP `rpg_general`,DROP `rpg_empereur`;";
 				$Qry11 = "DROP TABLE `$dbsettings[prefix]config`";
+				$Qry12	= "ALTER TABLE  `$dbsettings[prefix]errors` ADD `error_level` SMALLINT(5) UNSIGNED NULL DEFAULT NULL AFTER `error_type`,
+							ADD  `error_line` SMALLINT(5) UNSIGNED NULL DEFAULT NULL AFTER  `error_level` ,
+							ADD  `error_file` VARCHAR(255) NULL DEFAULT NULL AFTER  `error_line`
+							ADD  `error_hash` CHAR(32) NULL DEFAULT NULL AFTER  `error_id` ,
+							ADD UNIQUE (`error_hash`)";
 
 				$QrysArray	= NULL;
 
@@ -254,11 +259,11 @@ switch ($Mode)
 					case '2.9.0':
 					case '2.9.1':
 					case '2.9.2':
-						$QrysArray	= array($Qry1, $Qry2, $Qry3, $Qry4, $Qry5, $Qry6, $Qry7, $Qry8, $Qry9, $Qry10, $Qry11);
+						$QrysArray	= array($Qry1, $Qry2, $Qry3, $Qry4, $Qry5, $Qry6, $Qry7, $Qry8, $Qry9, $Qry10, $Qry11, $Qry12);
 						migrate_to_xml();
 					break;
 					case '2.9.3':
-						$QrysArray	= array($Qry1, $Qry2, $Qry6, $Qry7, $Qry8, $Qry9, $Qry10, $Qry11);
+						$QrysArray	= array($Qry1, $Qry2, $Qry6, $Qry7, $Qry8, $Qry9, $Qry10, $Qry11, $Qry12);
 						migrate_to_xml();
 					break;
 					case '2.9.4':
@@ -266,15 +271,15 @@ switch ($Mode)
 					case '2.9.6':
 					case '2.9.7':
 					case '2.9.8':
-						$QrysArray	= array($Qry1, $Qry2, $Qry7, $Qry8, $Qry9, $Qry10, $Qry11);
+						$QrysArray	= array($Qry1, $Qry2, $Qry7, $Qry8, $Qry9, $Qry10, $Qry11, $Qry12);
 						migrate_to_xml();
 					break;
 					case '2.9.9':
-						$QrysArray	= array($Qry1, $Qry2, $Qry9, $Qry10, $Qry11 );
+						$QrysArray	= array($Qry1, $Qry2, $Qry9, $Qry10, $Qry11, $Qry12);
 						migrate_to_xml();
 					break;
 					case '2.9.10':
-						$QrysArray	= array($Qry1, $Qry2 , $Qry10, $Qry11);
+						$QrysArray	= array($Qry1, $Qry2 , $Qry10, $Qry11, $Qry12);
 						migrate_to_xml();
 					break;
 					case '2.10.0':
@@ -288,6 +293,7 @@ switch ($Mode)
 					case '2.10.8':
 					case '2.10.9':
 					case '2.10.10':
+						$QrysArray	= array($Qry12);
 						update_config ( 'version' , SYSTEM_VERSION );
 					break;
 					default:

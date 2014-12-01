@@ -942,7 +942,7 @@ $lang['log_view']					= '¿Ver menu de Observación?';
 $lang['log_config']					= '¿Configurar opciones de juego?';
 $lang['log_system_mod_title']		= '<font color=lime>||| SISTEMA DE MODERACIÓN |||</font>';
 $lang['log_system_auth_title']		= '<font color=lime>||| CAMBIO DE RANGO |||</font>';
-$lang['log_errores_title']			= '<font color=lime>||| LISTA DE ERRORES |||</font>';
+$lang['log_errors_title']			= '<font color=lime>||| LISTA DE ERRORES |||</font>';
 $lang['log_delete_all_errors']		= 'ha borrado todos los mensajes de error';
 $lang['log_delete_errors']			= 'ha borrado un error';
 $lang['log_queries_title']			= '<font color=lime>||| CONSULTA SQL |||</font>';

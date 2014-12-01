@@ -167,7 +167,7 @@ function MyCrazyLittleSearch($SpecifyItems, $WhereItem, $SpecifyWhere, $SpecialS
 				if ($user['authlevel']	==	'3')
 				{
 					if ($WhileResult[0] != $user['id'])
-						$DELETEBUTTON	=	"<a href=\"SearchingPage.php?delete=user&user=".$WhileResult[0]."\" border=\"0\" onclick=\"return confirm('".$lang['ul_sure_you_want_dlte']." $WhileResult[1]?');\"><img src=\"../styles/images/r1.png\" title=".$WhileResult[1]."></a>";
+						$DELETEBUTTON	=	"<a href=\"SearchingPage.php?delete=user&user=".$WhileResult[0]."\" border=\"0\" onclick=\"return confirm('".$lang['ul_sure_you_want_dlte']." $WhileResult[1]?');\"><img src=\"../styles/images/false.png\" title=".$WhileResult[1]."></a>";
 					else
 						$DELETEBUTTON	=	"-";
 
@@ -187,7 +187,7 @@ function MyCrazyLittleSearch($SpecifyItems, $WhereItem, $SpecifyWhere, $SpecialS
 					$Search['LIST']	.=	"<th><a href=\"AccountEditorPage.php\" border=\"0\"><img src=\"../styles/images/Adm/GO.png\" title=".$lang['se_search_edit']."></a></th>";
 
 				if ($user['authlevel'] == '3')
-					$Search['LIST']	.=	"<th><a href=\"SearchingPage.php?delete=planet&planet=".$WhileResult[0]."\" border=\"0\" onclick=\"return confirm('".$lang['se_confirm_planet']." $WhileResult[1]');\"><img src=\"../styles/images/r1.png\" title=".$lang['button_delete']."></a></th>";
+					$Search['LIST']	.=	"<th><a href=\"SearchingPage.php?delete=planet&planet=".$WhileResult[0]."\" border=\"0\" onclick=\"return confirm('".$lang['se_confirm_planet']." $WhileResult[1]');\"><img src=\"../styles/images/false.png\" title=".$lang['button_delete']."></a></th>";
 			}
 
 			$Search['LIST']	.=	"</tr>";
