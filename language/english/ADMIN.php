@@ -356,6 +356,7 @@ $lang['er_data']			= 'Error';
 $lang['er_user']			= 'User';
 $lang['er_php_show']		= 'Errors to show';
 $lang['er_public']			= 'N/A';
+$lang['er_filter']			= 'Filter';
 //###########################################################//
 
 
@@ -411,7 +412,7 @@ $lang['ow_principal_contributors']	= 'Principal contributors';
 $lang['ow_special_thanks']			= 'Special Thanks';
 $lang['ow_install_file_detected']	= 'install/ directory was found. For security reasons, we recommend remove or rename it.';
 $lang['ow_config_file_writable']	= 'The config.php file could be written, it is advisable to be placed in chmod 440 (read only).';
-$lang['ow_database_errors']			= 'There are errors in your database. You can see them <a href="errors.php">clicking here</a>';
+$lang['ow_database_errors']			= 'There are errors in your database. You can see them <a href="ErrorPage.php">clicking here</a>';
 $lang['ow_old_version']				= 'There is a new version available. Click <a href="https://github.com/XG-Project/XG-Project-v2/releases" target="_blanck">here</a> to download it.';
 $lang['ow_none']					= 'No warnings';
 //###########################################################//

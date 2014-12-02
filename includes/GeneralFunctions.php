@@ -7,6 +7,8 @@
  * @since		Version 2.10.0
  */
 
+set_error_handler('catch_error');
+
 function unset_vars ( $prefix )
 {
 	$vars = array_keys ( $GLOBALS );
@@ -311,14 +313,11 @@ function catch_error($errno, $errstr, $errfile, $errline)
 	}
 
 	if ($errno === 2047 OR $errno === 6143 OR $errno === 30719) $errno = 32767;
-	if (read_config('errors_'.$errno))
-	{
-		$errfile	= str_replace(XN_ROOT, 'XN_ROOT/', $errfile);
-		$sender		= isset($user['id']) ? intval($user['id']) : 0;
-		$errstr		= str_replace('[<a href=\'', '[<a target="_blank" href=\'http://php.net/manual/%lang%/', $errstr);
-		$debug->php_error($sender, $errno, $errstr, $errfile, $errline);
-	}
+
+	$errfile	= str_replace(XN_ROOT, 'XN_ROOT/', $errfile);
+	$sender		= isset($user['id']) ? intval($user['id']) : 0;
+	$errstr		= str_replace('[<a href=\'', '[<a target="_blank" href=\'http://php.net/manual/%lang%/', $errstr);
+	$debug->php_error($sender, $errno, $errstr, $errfile, $errline);
+
 	return TRUE;
 }
-
-set_error_handler('catch_error');
