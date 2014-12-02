@@ -61,14 +61,19 @@ $QryTableBuddy      .= "`text` text character set latin1, ";
 $QryTableBuddy      .= "PRIMARY KEY  (`id`) ";
 $QryTableBuddy      .= ") ENGINE=MyISAM;";
 
-$QryTableErrors      = "CREATE TABLE `{{table}}` ( ";
-$QryTableErrors     .= "`error_id` bigint(11) NOT NULL auto_increment, ";
-$QryTableErrors     .= "`error_sender` varchar(32) character set latin1 NOT NULL default '0', ";
-$QryTableErrors     .= "`error_time` int(11) NOT NULL default '0', ";
-$QryTableErrors     .= "`error_type` varchar(32) character set latin1 NOT NULL default 'unknown', ";
-$QryTableErrors     .= "`error_text` text character set latin1, ";
-$QryTableErrors     .= "PRIMARY KEY  (`error_id`) ";
-$QryTableErrors     .= ") ENGINE=MyISAM;";
+$QryTableErrors		= "CREATE TABLE `{{table}}` (";
+$QryTableErrors		.= "`error_id` bigint(11) NOT NULL auto_increment, ";
+$QryTableErrors		.= "`error_hash` char(32) DEFAULT NULL, ";
+$QryTableErrors		.= "`error_sender` varchar(32) character set latin1 NOT NULL default '0', ";
+$QryTableErrors		.= "`error_time` int(11) NOT NULL default '0', ";
+$QryTableErrors		.= "`error_type` varchar(32) character set latin1 NOT NULL default 'unknown', ";
+$QryTableErrors		.= "`error_level` smallint(5) unsigned DEFAULT NULL,";
+$QryTableErrors		.= "`error_line` smallint(5) unsigned DEFAULT NULL,";
+$QryTableErrors		.= "`error_file` varchar(255) DEFAULT NULL,";
+$QryTableErrors		.= "`error_text` text character set latin1, ";
+$QryTableErrors		.= "PRIMARY KEY (`error_id`), ";
+$QryTableErrors		.= "UNIQUE KEY `error_hash` (`error_hash`) ";
+$QryTableErrors		.= ") ENGINE=MyISAM;";
 
 $QryTableFleets      = "CREATE TABLE `{{table}}` ( ";
 $QryTableFleets     .= "`fleet_id` bigint(11) NOT NULL auto_increment, ";

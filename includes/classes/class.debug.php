@@ -11,12 +11,15 @@ if(!defined('INSIDE')){ die(header ( 'location:../../' ));}
 
 class debug
 {
-	var $log,$numqueries;
+	protected $log;
+	protected $numqueries;
+	protected $php_log;
 
 	function __construct()
 	{
 		$this->vars = $this->log = '';
 		$this->numqueries = 0;
+		$this->php_log = array();
 	}
 
 	function add($mes)
@@ -65,5 +68,33 @@ class debug
 
 		die();
 	}
+
+	public function php_error($sender, $errno, $errstr, $errfile, $errline)
+	{
+		$this->php_log[] = array(	'hash'		=> md5($errno.$errstr.$errfile.$errline),
+									'sender'	=> $sender,
+									'time'		=> time(),
+									'type'		=> 'PHP',
+									'level'		=> $errno,
+									'line'		=> $errline,
+									'file'		=> mysql_real_escape_string($errfile),
+									'text'		=> mysql_real_escape_string($errstr));
+	}
+
+	public function log_php()
+	{
+		if ( ! empty($this->php_log))
+		{
+			$query	= 'INSERT IGNORE INTO {{table}}';
+			$query	.= '(`error_hash`, `error_sender`, `error_time`, `error_type`,
+						`error_level`, `error_line`, `error_file`, `error_text`) VALUES';
+			foreach ($this->php_log as $error)
+			{
+				$query	.= "('".$error['hash']."', '".$error['sender']."', ".$error['time'].",
+							'".$error['type']."', ".$error['level'].", ".$error['line'].",
+							'".$error['file']."', '".$error['text']."'),";
+			}
+			doquery(substr($query, 0, -1), 'errors');
+		}
+	}
 }
-?>

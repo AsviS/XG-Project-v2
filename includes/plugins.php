@@ -13,18 +13,15 @@ function phpself()
 {
 	$file = pathinfo($_SERVER['PHP_SELF']);
 
-	if (version_compare(PHP_VERSION, '5.2.0', '<'))
-	{
-		$file['filename'] = substr($file['basename'], 0, strlen($file['basename']) - strlen($file['extension']) - 1);
-	}
+	$filename = substr($file['basename'], 0, strlen($file['basename']) - strlen($file['extension']) - 1);
 
 	if (basename(XGP_ROOT) != '.')
 	{
-		return basename($file['dirname']).'/'.$file['filename'];
+		return basename($file['dirname']).'/'.$filename;
 	}
 	else
 	{
-		return $file['filename'];
+		return $filename;
 	}
 }
 

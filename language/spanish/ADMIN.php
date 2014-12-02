@@ -5,6 +5,7 @@ $lang['adm_cp_title']		= 'Panel de control de administración';
 $lang['adm_cp_index']		= 'Inicio';
 $lang['mu_moderation_page']	= 'Permisos';
 $lang['adm_cp_logout']		= 'Salir';
+$lang['lang_key']			= 'es';
 
 //	MISCELANEO - MISCELLANEOUS
 $lang['ad_number']			= 'Nº';
@@ -337,11 +338,23 @@ $lang['cs_timeact_1']					= 'La última actualización se efectuó el: ';
 
 
 //---------------	LISTA DE ERRORES - ERROR LIST	------------------------//
-$lang['er_errors']		= ' error/es';
-$lang['er_error_list']	= 'Lista de errores';
-$lang['er_dlte_all']	= 'Eliminar todos';
-$lang['er_type']		= 'Tipo';
-$lang['er_data']		= 'Fecha';
+$lang['er_menu']			= "Errores";
+$lang['er_php']				= 'Errores PHP';
+$lang['er_sql']				= 'Errors SQL';
+$lang['er_errors']			= 'error/es';
+$lang['er_sql_error_list']	= 'Lista de errores SQL';
+$lang['er_php_error_list']	= 'Lista de errores PHP';
+$lang['er_dlte_all']		= 'Eliminar todos';
+$lang['er_type']			= 'Tipo';
+$lang['er_level']			= 'Nivel';
+$lang['er_file']			= 'Archivo';
+$lang['er_line']			= 'Línea';
+$lang['er_date']			= 'Fecha';
+$lang['er_data']			= 'Error';
+$lang['er_user']			= 'Usuario';
+$lang['er_php_show']		= 'Errores a mostrar';
+$lang['er_public']			= 'N/A';
+$lang['er_filter']			= 'Filtrar';
 //###########################################################//
 
 
@@ -942,7 +955,7 @@ $lang['log_view']					= '¿Ver menu de Observación?';
 $lang['log_config']					= '¿Configurar opciones de juego?';
 $lang['log_system_mod_title']		= '<font color=lime>||| SISTEMA DE MODERACIÓN |||</font>';
 $lang['log_system_auth_title']		= '<font color=lime>||| CAMBIO DE RANGO |||</font>';
-$lang['log_errores_title']			= '<font color=lime>||| LISTA DE ERRORES |||</font>';
+$lang['log_errors_title']			= '<font color=lime>||| LISTA DE ERRORES |||</font>';
 $lang['log_delete_all_errors']		= 'ha borrado todos los mensajes de error';
 $lang['log_delete_errors']			= 'ha borrado un error';
 $lang['log_queries_title']			= '<font color=lime>||| CONSULTA SQL |||</font>';

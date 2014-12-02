@@ -7,6 +7,8 @@
  * @since		Version 2.10.0
  */
 
+set_error_handler('catch_error');
+
 function unset_vars ( $prefix )
 {
 	$vars = array_keys ( $GLOBALS );
@@ -106,6 +108,8 @@ function display ($page, $topnav = TRUE, $metatags = '', $AdminPage = FALSE, $me
 	}
 
 	$DisplayPage .= "\n<center>\n". $page ."\n</center>\n";
+
+	$debug->log_php();
 
 	if(!defined('LOGIN') && isset($_GET['page']) && $_GET['page'] != 'galaxy')
 		$DisplayPage .= parsetemplate ( gettemplate ( 'general/footer' ) , '' );
@@ -300,5 +304,20 @@ function mysql_escape_value ( $inp )
 	return $inp;
 }
 
+function catch_error($errno, $errstr, $errfile, $errline)
+{
+	global $user, $debug;
+	if ( ! (error_reporting() & $errno))
+	{
+		return;
+	}
 
-?>
+	if ($errno === 2047 OR $errno === 6143 OR $errno === 30719) $errno = 32767;
+
+	$errfile	= str_replace(XN_ROOT, 'XN_ROOT/', $errfile);
+	$sender		= isset($user['id']) ? intval($user['id']) : 0;
+	$errstr		= str_replace('[<a href=\'', '[<a target="_blank" href=\'http://php.net/manual/%lang%/', $errstr);
+	$debug->php_error($sender, $errno, $errstr, $errfile, $errline);
+
+	return TRUE;
+}

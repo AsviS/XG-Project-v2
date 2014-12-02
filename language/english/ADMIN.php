@@ -5,6 +5,7 @@ $lang['adm_cp_title']		= 'Administration control Panel';
 $lang['adm_cp_index']		= 'Home';
 $lang['mu_moderation_page']	= 'Permissions';
 $lang['adm_cp_logout']		= 'Quit';
+$lang['lang_key']			= 'en';
 
 //	MISCELÁNEO - MISCELLANEOUS
 $lang['ad_number']			= 'Nº';
@@ -339,11 +340,23 @@ $lang['cs_timeact_1']					= 'The last update was on: ';
 
 
 //---------------	LISTA DE ERRORES - ERROR LIST	------------------------//
-$lang['er_errors']		= ' error/s';
-$lang['er_error_list']	= 'Error list';
-$lang['er_dlte_all']	= 'Delete all';
-$lang['er_type']		= 'Type';
-$lang['er_data']		= 'Date';
+$lang['er_menu']			= 'Errors';
+$lang['er_php']				= 'PHP errors';
+$lang['er_sql']				= 'SQL errors';
+$lang['er_errors']			= 'error/s';
+$lang['er_sql_error_list']	= 'SQL error list';
+$lang['er_php_error_list']	= 'PHP error list';
+$lang['er_dlte_all']		= 'Delete all';
+$lang['er_type']			= 'Type';
+$lang['er_level']			= 'Level';
+$lang['er_file']			= 'File';
+$lang['er_line']			= 'Line';
+$lang['er_date']			= 'Date';
+$lang['er_data']			= 'Error';
+$lang['er_user']			= 'User';
+$lang['er_php_show']		= 'Errors to show';
+$lang['er_public']			= 'N/A';
+$lang['er_filter']			= 'Filter';
 //###########################################################//
 
 
@@ -399,7 +412,7 @@ $lang['ow_principal_contributors']	= 'Principal contributors';
 $lang['ow_special_thanks']			= 'Special Thanks';
 $lang['ow_install_file_detected']	= 'install/ directory was found. For security reasons, we recommend remove or rename it.';
 $lang['ow_config_file_writable']	= 'The config.php file could be written, it is advisable to be placed in chmod 440 (read only).';
-$lang['ow_database_errors']			= 'There are errors in your database. You can see them <a href="errors.php">clicking here</a>';
+$lang['ow_database_errors']			= 'There are errors in your database. You can see them <a href="ErrorPage.php">clicking here</a>';
 $lang['ow_old_version']				= 'There is a new version available. Click <a href="https://github.com/XG-Project/XG-Project-v2/releases" target="_blanck">here</a> to download it.';
 $lang['ow_none']					= 'No warnings';
 //###########################################################//
@@ -943,7 +956,7 @@ $lang['log_view']					= 'View observation menu?';
 $lang['log_config']					= 'Configure playing options?';
 $lang['log_system_mod_title']		= '<font color=lime>||| SYSTEM MODERATION |||</font>';
 $lang['log_system_auth_title']		= '<font color=lime>||| CHANGE RANK |||</font>';
-$lang['log_errores_title']			= '<font color=lime>||| LIST OF ERRORS |||</font>';
+$lang['log_errors_title']			= '<font color=lime>||| LIST OF ERRORS |||</font>';
 $lang['log_delete_all_errors']		= 'has removed all the error messages';
 $lang['log_delete_errors']			= 'has removed an error';
 $lang['log_queries_title']			= '<font color=lime>||| CONSULT SQL |||</font>';
