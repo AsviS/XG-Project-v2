@@ -2,10 +2,10 @@
 <body>
 <table width="70%">
 	<tr>
-		<td class="c" colspan="5">{er_error_list} [<a href="?errors=sql&amp;deleteall=yes">{er_dlte_all}</a>]</td>
+		<td class="c" colspan="4">{er_sql_error_list} [<a href="?errors=sql&amp;deleteall=yes">{er_dlte_all}</a>]</td>
 	</tr>
 	<tr>
-		<td class="b" colspan="5">{total_errors} {er_errors}</td>
+		<th class="b" colspan="4">{total_errors} {er_errors}</td>
 	</tr>
 	<tr>
 		<td class="c" width="25">{input_id}</td>

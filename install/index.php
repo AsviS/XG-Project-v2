@@ -20,8 +20,8 @@ $Page     = isset ( $_GET['page'] ) ? $_GET['page'] : NULL;
 $phpself  = $_SERVER['PHP_SELF'];
 $nextpage = $Page + 1;
 
-if(version_compare(PHP_VERSION, "5.2.0", "<"))
-	die("¡Error! Tu servidor debe tener al menos php 5.2.0");
+if(version_compare(PHP_VERSION, "5.4.0", "<"))
+	die("¡Error! Tu servidor debe tener al menos php 5.4.0");
 
 if (empty($Mode)) { $Mode = 'intro'; }
 if (empty($Page)) { $Page = 1;       }
@@ -248,7 +248,7 @@ switch ($Mode)
 				$Qry11 = "DROP TABLE `$dbsettings[prefix]config`";
 				$Qry12	= "ALTER TABLE  `$dbsettings[prefix]errors` ADD `error_level` SMALLINT(5) UNSIGNED NULL DEFAULT NULL AFTER `error_type`,
 							ADD  `error_line` SMALLINT(5) UNSIGNED NULL DEFAULT NULL AFTER  `error_level` ,
-							ADD  `error_file` VARCHAR(255) NULL DEFAULT NULL AFTER  `error_line`
+							ADD  `error_file` VARCHAR(255) NULL DEFAULT NULL AFTER  `error_line`,
 							ADD  `error_hash` CHAR(32) NULL DEFAULT NULL AFTER  `error_id` ,
 							ADD UNIQUE (`error_hash`)";
 

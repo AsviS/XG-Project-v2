@@ -38,7 +38,7 @@ switch ($errors)
 		$query = doquery("SELECT * FROM `{{table}}` WHERE `error_type` != 'PHP' ORDER BY `error_time`", 'errors');
 		$i = 0;
 		$parse['errors_list'] = '';
-		while ($u = $query->fetch_assoc())
+		while ($u = mysql_fetch_assoc($query))
 		{
 			$i++;
 			$parse['errors_list']	.= '<tr>';
@@ -95,7 +95,8 @@ switch ($errors)
 		$i						= 0;
 		$error_text				= array('E_ALL', 'E_DEPRECATED', 'E_RECOVERABLE_ERROR', 'E_STRICT', 'E_NOTICE', 'E_WARNING');
 		$parse['errors_list']	= '';
-		while ($u = $query->fetch_assoc())
+
+		while ($u = mysql_fetch_assoc($query))
 		{
 			$i++;
 			$parse['errors_list']	.= '<tr>';

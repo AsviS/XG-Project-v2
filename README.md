@@ -4,7 +4,7 @@ XG Project es un clon del juego OGame, creado por Gameforge. XG Project es la co
 
 ## Requisitos mínimos ##
 
-* PHP 5.2.0 o superior
+* PHP 5.4.0 o superior
 * MySQL 5.0.19 o superior.
 
 ## Instalación ##

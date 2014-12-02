@@ -5,6 +5,7 @@ $lang['adm_cp_title']		= 'Administration control Panel';
 $lang['adm_cp_index']		= 'Home';
 $lang['mu_moderation_page']	= 'Permissions';
 $lang['adm_cp_logout']		= 'Quit';
+$lang['lang_key']			= 'en';
 
 //	MISCELÁNEO - MISCELLANEOUS
 $lang['ad_number']			= 'Nº';
@@ -339,11 +340,22 @@ $lang['cs_timeact_1']					= 'The last update was on: ';
 
 
 //---------------	LISTA DE ERRORES - ERROR LIST	------------------------//
-$lang['er_errors']		= ' error/s';
-$lang['er_error_list']	= 'Error list';
-$lang['er_dlte_all']	= 'Delete all';
-$lang['er_type']		= 'Type';
-$lang['er_data']		= 'Date';
+$lang['er_menu']			= 'Errors';
+$lang['er_php']				= 'PHP errors';
+$lang['er_sql']				= 'SQL errors';
+$lang['er_errors']			= 'error/s';
+$lang['er_sql_error_list']	= 'SQL error list';
+$lang['er_php_error_list']	= 'PHP error list';
+$lang['er_dlte_all']		= 'Delete all';
+$lang['er_type']			= 'Type';
+$lang['er_level']			= 'Level';
+$lang['er_file']			= 'File';
+$lang['er_line']			= 'Line';
+$lang['er_date']			= 'Date';
+$lang['er_data']			= 'Error';
+$lang['er_user']			= 'User';
+$lang['er_php_show']		= 'Errors to show';
+$lang['er_public']			= 'N/A';
 //###########################################################//
 
 

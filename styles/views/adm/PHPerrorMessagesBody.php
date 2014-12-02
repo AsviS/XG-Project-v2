@@ -18,7 +18,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td class="b" colspan="5">{total_errors} {er_errors}</td>
+		<th class="b" colspan="8">{total_errors} {er_errors}</td>
 	</tr>
 	<tr>
 		<td class="c" width="25">{input_id}</td>

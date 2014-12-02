@@ -7,10 +7,10 @@
  * @since		Version 2.10.0
  */
 
-// SETEADO PARA EVITAR ERRORRES EN VERSION DE PHP MAYORES A 5.3.0
-//error_reporting ( E_ALL & ~E_NOTICE );
-//ini_set('display_errors', 1);
-//error_reporting(E_ALL);
+if (version_compare(PHP_VERSION, "5.4.0", "<"))
+die('<!DOCTYPE html><html lang="en"><head><title>¡Error!</title><meta charset="UTF-8"></head><body>¡Error! Your server must have at least PHP 5.4.0</body></html>');
+
+error_reporting(-1);
 
 $user          	= array();
 $lang          	= array();
