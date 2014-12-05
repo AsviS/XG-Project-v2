@@ -2,7 +2,7 @@
 <configurations>
 	<config>
 		<name>version</name>
-		<value>2.10.11</value>
+		<value>2.11.0-dev</value>
 	</config>
 	<config>
 		<name>users_amount</name>
