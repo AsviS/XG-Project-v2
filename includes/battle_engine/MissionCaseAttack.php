@@ -243,7 +243,7 @@ function updateMoon($FleetRow, $report, $moonName, $targetUserId, $targetPlanet)
     $QryGetMoonIdFromPlanet .= "`system` = '$System' AND ";
     $QryGetMoonIdFromPlanet .= "`planet` = '$Planet' AND ";
     $QryGetMoonIdFromPlanet .= "`planet_type` = '3';";
-    $lunarow = doquery($QryGetMoonIdFromPlanet, 'planets', true);
+    $lunarow = doquery($QryGetMoonIdFromPlanet, 'galaxy', true);
 
     $QryUpdateMoonInGalaxy = "UPDATE {{table}} SET ";
     $QryUpdateMoonInGalaxy .= "`id_luna` = '" . $lunarow['id'] . "', ";
