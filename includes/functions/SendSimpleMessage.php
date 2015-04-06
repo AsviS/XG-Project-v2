@@ -9,7 +9,7 @@
 
 if(!defined('INSIDE')){ die(header("location:../../"));}
 
-	function SendSimpleMessage ( $Owner, $Sender, $Time, $Type, $From, $Subject, $Message)
+	function SendSimpleMessage($Owner, $Sender, $Time, $Type, $From, $Subject, $Message)
 	{
 
 		if ($Time == '')
@@ -19,14 +19,17 @@ if(!defined('INSIDE')){ die(header("location:../../"));}
 
 		$Message = (strpos($Message, "/adm/") === FALSE ) ? $Message : "";
 
+		$Message = mysql_escape_value($inp);
+
+
 		$QryInsertMessage  = "INSERT INTO {{table}} SET ";
-		$QryInsertMessage .= "`message_owner` 	= '". $Owner 	."', ";
-		$QryInsertMessage .= "`message_sender` 	= '". $Sender 	."', ";
+		$QryInsertMessage .= "`message_owner` 	= '". $Owner	."', ";
+		$QryInsertMessage .= "`message_sender` 	= '". $Sender	."', ";
 		$QryInsertMessage .= "`message_time` 	= '". $Time 	."', ";
 		$QryInsertMessage .= "`message_type` 	= '". $Type 	."', ";
 		$QryInsertMessage .= "`message_from` 	= '". $From 	."', ";
-		$QryInsertMessage .= "`message_subject` = '".  $Subject ."', ";
-		$QryInsertMessage .= "`message_text` 	= '". $Message 	."';";
+		$QryInsertMessage .= "`message_subject` = '". mysql_escape_value($Subject)  ."', ";
+		$QryInsertMessage .= "`message_text` 	= '". mysql_escape_value($Message) 	."';";
 
 		doquery( $QryInsertMessage, 'messages');
 
