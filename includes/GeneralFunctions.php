@@ -314,7 +314,7 @@ function catch_error($errno, $errstr, $errfile, $errline)
 
 	if ($errno === 2047 OR $errno === 6143 OR $errno === 30719) $errno = 32767;
 
-	$errfile	= str_replace(XN_ROOT, 'XN_ROOT/', $errfile);
+	$errfile	= str_replace(XGP_ROOT, 'XN_ROOT/', $errfile);
 	$sender		= isset($user['id']) ? intval($user['id']) : 0;
 	$errstr		= str_replace('[<a href=\'', '[<a target="_blank" href=\'http://php.net/manual/%lang%/', $errstr);
 	$debug->php_error($sender, $errno, $errstr, $errfile, $errline);

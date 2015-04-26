@@ -2,9 +2,9 @@ body
 {
 	color                		: #E6EBFB;
   	background-image     		: url(../images/bg1.jpg);
-	background-color			: #050E1F;
+	background-color			: #000000;
   	background-repeat    		: no-repeat;
-	background-position			: center;
+	background-position			: top right;
 	background-attachment		: fixed;
   	font-size            		: 10px;
 	_font-size           		: 11px;
@@ -145,7 +145,7 @@ table.s
 	border: 0px;
 	font-size: 10px;
 	_font-size: 11px;
-	background-color: #050E1F;
+	background-color: #000000;
 	filter: alpha(opacity=100);
   	_moz-opacity: 1.0;
   	_khtml-opacity: 1.0;
@@ -182,7 +182,7 @@ td.t
 /* TOPNAV */
 .topnav
 {
-	background:#050E1F;
+	background:#000000;
 }
 
 a.out {
