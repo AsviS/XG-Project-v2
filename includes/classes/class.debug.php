@@ -77,8 +77,8 @@ class debug
 									'type'		=> 'PHP',
 									'level'		=> $errno,
 									'line'		=> $errline,
-									'file'		=> mysql_real_escape_string($errfile),
-									'text'		=> mysql_real_escape_string($errstr));
+									'file'		=> mysql_escape_value($errfile),
+									'text'		=> mysql_escape_value($errstr));
 	}
 
 	public function log_php()
@@ -94,7 +94,7 @@ class debug
 							'".$error['type']."', ".$error['level'].", ".$error['line'].",
 							'".$error['file']."', '".$error['text']."'),";
 			}
-			doquery(substr($query, 0, -1), 'errors');
+			if ($link) doquery(substr($query, 0, -1), 'errors');
 		}
 	}
 }

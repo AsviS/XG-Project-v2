@@ -82,7 +82,7 @@ a:hover {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size: 21px;
 	font-weight: bold;
-	color: #b1daf2;
+	color: #4B99C6;
 	text-align: center;
 	width: 400px;
 }
@@ -224,7 +224,7 @@ a:hover {
    color:#b1daf2;
    text-decoration: none;
    display: block;
-
+   text-shadow: 2px 2px 2px #000;
 }
 
 #mainmenu span {

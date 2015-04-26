@@ -12,8 +12,6 @@ define('INSTALL' , FALSE);
 define('LOGIN'   ,  TRUE);
 define('XGP_ROOT',	'./');
 
-$InLogin = TRUE;
-
 include(XGP_ROOT . 'global.php');
 
 includeLang('PUBLIC');

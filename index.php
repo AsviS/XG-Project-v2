@@ -12,13 +12,12 @@ define('INSTALL' , FALSE);
 define('LOGIN'   , TRUE);
 define('XGP_ROOT',	'./');
 
-$InLogin = TRUE;
-
 include(XGP_ROOT . 'global.php');
 
 includeLang ( 'PUBLIC' );
 $parse = $lang;
-switch ( ( isset ( $_GET['page'] ) ) )
+$page = isset($_GET['page']) ? $_GET['page'] : NULL;
+switch ($page)
 {
 	case'lostpassword':
 		function sendnewpassword($mail)
@@ -99,7 +98,7 @@ switch ( ( isset ( $_GET['page'] ) ) )
 				doquery("UPDATE `{{table}}` SET `current_planet` = `id_planet` WHERE `id` ='".$login["id"]."'", 'users');
 
 				unset ( $dbsettings );
-				header ( 'location:game.php?page=overview' );
+				header ( 'location: '.XGP_ROOT.'game.php?page=overview' );
 				exit;
 			}
 			else

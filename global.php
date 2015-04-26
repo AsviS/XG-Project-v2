@@ -44,44 +44,51 @@ if ( filesize ( XGP_ROOT . 'config.php' ) != 0 )
 
 if ( INSTALL != TRUE )
 {
-	include ( XGP_ROOT . 'includes/vars.php' );
-	include ( XGP_ROOT . 'includes/functions/CreateOneMoonRecord.php' );
-	include ( XGP_ROOT . 'includes/functions/CreateOnePlanetRecord.php' );
-	include ( XGP_ROOT . 'includes/functions/SendSimpleMessage.php' );
-	include ( XGP_ROOT . 'includes/functions/calculateAttack.php' );
-	include ( XGP_ROOT . 'includes/functions/formatCR.php' );
-	include ( XGP_ROOT . 'includes/functions/GetBuildingTime.php' );
-	include ( XGP_ROOT . 'includes/functions/HandleElementBuildingQueue.php' );
-	include ( XGP_ROOT . 'includes/functions/PlanetResourceUpdate.php' );
+	include(XGP_ROOT . 'includes/vars.php');
+	include(XGP_ROOT . 'includes/functions/CreateOneMoonRecord.php');
+	include(XGP_ROOT . 'includes/functions/CreateOnePlanetRecord.php');
+	include(XGP_ROOT . 'includes/functions/SendSimpleMessage.php');
+	include(XGP_ROOT . 'includes/functions/calculateAttack.php');
+	include(XGP_ROOT . 'includes/functions/formatCR.php');
+	include(XGP_ROOT . 'includes/functions/GetBuildingTime.php');
+	include(XGP_ROOT . 'includes/functions/HandleElementBuildingQueue.php');
+	include(XGP_ROOT . 'includes/functions/PlanetResourceUpdate.php');
 
-	$game_lang	=	read_config ( 'lang' );
+	$game_lang	= read_config('lang');
 
-	define ( 'DEFAULT_LANG'	, (	$game_lang  == '' ) ? "spanish" : $game_lang );
+	define('DEFAULT_LANG', ($game_lang  == '') ? "spanish" : $game_lang);
 
-	includeLang ( 'INGAME' );
+	includeLang('INGAME');
 
-	if ( !isset ( $InLogin ) or $InLogin != TRUE )
+	include (XGP_ROOT . 'includes/classes/class.CheckSession.php');
+
+	$Result        	= new CheckSession();
+	$Result			= $Result->CheckUser ( $IsUserChecked );
+	$IsUserChecked 	= $Result['state'];
+
+	if (( ! defined('LOGIN')) && ( ! $IsUserChecked))
 	{
-		include ( XGP_ROOT . 'includes/classes/class.CheckSession.php' );
-
-		$Result        	= new CheckSession();
-		$Result			= $Result->CheckUser ( $IsUserChecked );
-		$IsUserChecked 	= $Result['state'];
-		$user          	= $Result['record'];
-		require ( XGP_ROOT . 'includes/classes/class.SecurePage.php' );
-		SecurePage::run();
-
-		if ( read_config ( 'game_disable' ) == 0 && $user['authlevel'] == 0 )
-		{
-			message ( stripslashes ( read_config ( 'close_reason' ) ) , '' , '' , FALSE , FALSE );
-		}
+		header('Location: '.XGP_ROOT);
+	}
+	elseif (defined('LOGIN') && LOGIN && $IsUserChecked)
+	{
+		header('Location: '.XGP_ROOT.'game.php?page=overview');
 	}
 
-	if ( ( time() >= ( read_config ( 'stat_last_update' ) + ( 60 * read_config ( 'stat_update_time' ) ) ) ) )
+	$user          	= $Result['record'];
+	require(XGP_ROOT . 'includes/classes/class.SecurePage.php');
+	SecurePage::run();
+
+	if (read_config('game_disable') == 0 && $user['authlevel'] == 0)
 	{
-		include	( XGP_ROOT . 'adm/statfunctions.php' );
+		message(stripslashes(read_config('close_reason')), '', '', FALSE, FALSE);
+	}
+
+	if ((time() >= (read_config('stat_last_update') + (60 * read_config('stat_update_time')))))
+	{
+		include(XGP_ROOT . 'adm/statfunctions.php');
 		$result	= MakeStats();
-		update_config ( 'stat_last_update' , $result['stats_time'] );
+		update_config('stat_last_update', $result['stats_time']);
 	}
 
 	if ( !empty ( $user ) )
