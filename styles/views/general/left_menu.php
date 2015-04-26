@@ -220,7 +220,7 @@ function f(target_url,win_name) {
  <tr>
   <td>
    <div align="center"><font color="#FFFFFF">
-     <a href="#" title="Powered by XG Project © 2008 - 2014 GNU General Public License">© 2008 - 2014</a>
+     <a href="#" title="Powered by XG Project © 2008 - 2015 GNU General Public License">© 2008 - 2015</a>
     </font></div>
   </td>
  </tr>

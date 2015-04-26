@@ -42,7 +42,7 @@
                     </div>
                     <!-- PLEASE DO NOT REMOVE THE COPYRGHT LINE // POR FAVOR NO BORRES LA LINEA DE COPYRIGHTS -->
                     <div id="copyright">
-                    	Powered by <a href="https://github.com/XG-Project/XG-Project-v2" target="_blanck" title="XG Project">XG Project</a> © 2008 - 2014.
+                    	Powered by <a href="https://github.com/XG-Project/XG-Project-v2" target="_blanck" title="XG Project">XG Project</a> © 2008 - 2015.
                     </div>
                     <!-- PLEASE DO NOT REMOVE THE COPYRGHT LINE // POR FAVOR NO BORRES LA LINEA DE COPYRIGHTS -->
                 </div>
